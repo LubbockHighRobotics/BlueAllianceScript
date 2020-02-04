@@ -26,7 +26,7 @@ queryNum = 0
 counter = 0
 allLines = fo.readlines()
 teamLines = names.readlines()
-print(allLines)
+#print(allLines)
 for i in text:
 	if(i == "\n"):
 		line += 1
@@ -34,17 +34,19 @@ lines = str(line)
 teamArray = [0]*(line-1)
 team2Array = [0]*(line-1)
 nameArray = [0]*(line-1)
-print(teamArray)
-print("There are " + lines + " lines.")
+#print(teamArray)
+#print("There are " + lines + " lines.")
 while counter < line-1:
 	nameArray[counter] = teamLines[counter]
 	teamArray[counter] = int(allLines[counter])
 	team2Array[counter]= int(allLines[counter])
 	counter += 1
 teamArray.sort()
-print(teamArray)
-print(nameArray)
+#print(teamArray)
+#print(nameArray)
 clear() 
 while queryNum < line-1:
+	# print(teamArray)
+	# print(nameArray)
 	insert(num=teamArray[queryNum], name=nameArray[team2Array.index(teamArray[queryNum])])
 	queryNum += 1
