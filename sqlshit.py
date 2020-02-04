@@ -1,8 +1,3 @@
-hostname = 'mysql.lhsrobotics.net'
-username = 'lhsrobo'
-pass1 = 'DomSkyBlack4717'
-database = 'lhs_scoutdb'
-
 import mysql.connector
 cnx = mysql.connector.connect( host=hostname, user=username, password=pass1, db=database )
 cnxCursor = cnx.cursor()
